@@ -12,9 +12,10 @@ export default async function Page(){
     }
     return(
         <>
-          <p>now logout</p>
-          <Link href="/">TOP</Link>
-        </>
+          <p className="text-right"><Link href="/">TOP</Link></p>
+          <h1 className="text-center text-lg mt-3">now logout</h1>
+
+          </>
 
     )
 }

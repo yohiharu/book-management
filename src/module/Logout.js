@@ -1,4 +1,5 @@
 import { signOut } from "../../auth"
+import { Link, Button } from "@mui/material"
 
 export default async function Logout(){
   const logoutClick = async() => {
@@ -7,9 +8,10 @@ export default async function Logout(){
   }
   return(
     <>
-      <p>logout page</p>
-      <form action={logoutClick}>
-        <button>button</button>
+      <p className="text-right"><Link href="/">TOP</Link></p>
+      <h1 className="text-center text-3xl">Logout page</h1>
+      <form className="flex flex-row justify-center mt-3" action={logoutClick}>
+        <Button variant="contained" onClick={logoutClick}>Button</Button>
       </form>
     </>
 
